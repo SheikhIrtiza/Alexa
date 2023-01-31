@@ -51,7 +51,7 @@ def run_alexa():
     elif 'joke' in command:
         talk(pyjokes.get_joke())
     elif 'do you have money' in command:
-        talk('Sorry I don't have money')
+        talk('Sorry I dont have money')
     else:
         talk('Please say the command again.')
 
