@@ -50,6 +50,8 @@ def run_alexa():
         talk('I am in a relationship with Siri')
     elif 'joke' in command:
         talk(pyjokes.get_joke())
+    elif 'do you have money' in command:
+        talk('Sorry I don't have money')
     else:
         talk('Please say the command again.')
 
