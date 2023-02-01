@@ -52,6 +52,12 @@ def run_alexa():
         talk(pyjokes.get_joke())
     elif 'do you have money' in command:
         talk('Sorry I dont have money')
+    elif 'I miss you Alexa' in command:
+        talk('I miss you too much')
+    elif 'who is my best friend ' in command:
+        talk('I guess Ziya is your best friend ')
+    elif 'How do you know?' in command:
+        talk('You tell her everything about yourself')
     else:
         talk('Please say the command again.')
 
