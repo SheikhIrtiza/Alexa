@@ -1,6 +1,6 @@
 Build an Artificial Assistant 
 
-Installation
+Installation 
 
 For windows users
 
