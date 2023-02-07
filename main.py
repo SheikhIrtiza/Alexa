@@ -1,6 +1,6 @@
 import speech_recognition as sr
 import pyttsx3
-import pywhatkit
+import pywhatkit #
 import datetime
 import wikipedia
 import pyjokes
@@ -18,7 +18,7 @@ def talk(text):
 
 def take_command():
     try:
-        with sr.Microphone() as source:
+        with sr.Microphone() as source: #Here source is the source of our audio or command
             print('listening...')
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
@@ -27,18 +27,18 @@ def take_command():
                 command = command.replace('alexa', '')
                 print(command)
     except:
-        pass
+        pass  #python will ignore or don't do anything when the exception happens.
     return command
 
 def run_alexa():
-    command = take_command()
+    command = take_command() #It will take the command from user 
     print(command)
     if 'play' in command:
         song = command.replace('play', '')
         talk('playing ' + song)
-        pywhatkit.playonyt(song)
+        pywhatkit.playonyt(song) #song will be played on youtube
     elif 'time' in command:
-        time = datetime.datetime.now().strftime('%I:%M %p')
+        time = datetime.datetime.now().strftime('%I:%M %p') #strf is the string format of time as '%I' for 12hour format of the time and '%p' fr am and pm 
         talk('Current time is' + time)
     elif 'who the heck is' in command:
         person = command.replace('who the heck is', '')
