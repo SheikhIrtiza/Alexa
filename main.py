@@ -56,8 +56,6 @@ def run_alexa():
         talk('I miss you too much')
     elif 'who is my best friend ' in command:
         talk('I guess Ziya is your best friend ')
-    elif 'How do you know?' in command:
-        talk('You tell her everything about yourself')
     else:
         talk('Please say the command again.')
 
