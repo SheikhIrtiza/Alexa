@@ -5,7 +5,7 @@ import pywhatkit #
 import datetime
 import wikipedia
 import pyjokes
- 
+#  setting listener for necessary behaviour of recognitions
 listener = sr.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -19,9 +19,11 @@ def talk(text):
 
 def take_command():
     try:
+
         with sr.Microphone() as source: #Here source is the source of our audio or command
             print('listening...')
             voice = listener.listen(source)
+#        recognizing the sound using google
             command = listener.recognize_google(voice)
             command = command.lower()
             if 'alexa' in command:
