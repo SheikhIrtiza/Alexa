@@ -52,4 +52,3 @@ Adjust the voices[1].id in the setProperty method to customize the voice of the 
 
 The script runs in an infinite loop, continuously waiting for and processing user commands.
 
-Feel free to expand upon and customize the script based on your preferences and requirements.
